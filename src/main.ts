@@ -39,7 +39,7 @@ keycloak.onTokenExpired = handleEvent('TokenExpired')
 try {
   await keycloak.init({
     onLoad: 'check-sso',
-    silentCheckSsoRedirectUri: window.location.origin + '/silent-check-sso.html',
+    // silentCheckSsoRedirectUri: window.location.origin + '/silent-check-sso.html',
   })
 } catch (error) {
   console.error('Unable to initialize Keycloak:', error)
