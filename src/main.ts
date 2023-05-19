@@ -40,6 +40,7 @@ try {
   await keycloak.init({
     onLoad: 'check-sso',
     silentCheckSsoRedirectUri: window.location.origin + '/silent-check-sso.html',
+    enableLogging: true
   })
 } catch (error) {
   console.error('Unable to initialize Keycloak:', error)
