@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>kjs-playground</title>
+    </head>
+    <body>
+        <script src="oidc-client-ts.min.js" type="application/javascript"></script>
+        <script type="application/javascript">
+            const { Log, UserManager } = oidc
+
+            const rawUserManagerSettings = window.sessionStorage.getItem('oidc.usermanagersettings')
+            const userManagerSettings = JSON.parse(rawUserManagerSettings)
+
+            Log.setLogger(console)
+            Log.setLevel(Log.INFO)
+
+            const userManager = new UserManager({
+                authority: userManagerSettings.authority,
+                client_id: userManagerSettings.client_id,
+                redirect_uri: userManagerSettings.redirect_uri,
+                response_mode: 'query',
+                metadata: {
+                    issuer: userManagerSettings.metadata.issuer,
+                    token_endpoint: userManagerSettings.metadata.token_endpoint,
+                    check_session_iframe: userManagerSettings.metadata.check_session_iframe
+                }
+            })
+
+            userManager.signinPopupCallback().then(() => {
+                console.log('signin popup callback response success')
+            }).catch(error => {
+                console.error(error)
+            })
+        </script>
+    </body>
+</html>
