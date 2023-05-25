@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>kjs-playground</title>
+    </head>
+    <body>
+        <script src="oidc-client-ts.min.js" type="application/javascript"></script>
+        <script type="application/javascript">
+            const { Log, UserManager } = oidc
+
+            const rawUserManagerSettings = window.sessionStorage.getItem('oidc.usermanagersettings')
+            const userManagerSettings = JSON.parse(rawUserManagerSettings)
+
+            Log.setLogger(console)
+            Log.setLevel(Log.INFO)
+
+            const userManager = new UserManager({
+                authority: userManagerSettings.authority,
+                client_id: userManagerSettings.client_id,
+                redirect_uri: userManagerSettings.redirect_uri,
+                response_mode: 'query',
+                metadata: {
+                    issuer: userManagerSettings.metadata.issuer,
+                    token_endpoint: userManagerSettings.metadata.token_endpoint,
+                    check_session_iframe: userManagerSettings.metadata.check_session_iframe
+                }
+            })
+
+            const redirect = () => {
+                const newUrl = sessionStorage.getItem('oidc.appstarturl')
+                if (newUrl) {
+                    window.location.href = newUrl
+                } else {
+                    const urlParts = window.location.href.split('/')
+                    let url = urlParts[0] + '/'
+                    for (let i = 2; i < urlParts.length; i++) {
+                        if (urlParts[i].startsWith('redirect-callback')) break
+                        url = url + '/' + urlParts[i]
+                    }
+                    window.location.href = url
+                }
+            }
+
+            userManager
+                .signinRedirectCallback()
+                .then(() => {
+                    window.history.replaceState({}, window.document.title, window.location.origin)
+                    redirect()
+                })
+                .catch(error => {
+                    console.log(error)
+                    if (
+                        error.message === 'No matching state found in storage' ||
+                        error.message.startsWith('Metadata does not contain')
+                    ) {
+                        redirect()
+                    }
+                })
+        </script>
+    </body>
+</html>

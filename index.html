@@ -7,10 +7,10 @@
     <title>Keycloak JS Playground</title>
   </head>
   <body>
-    <p id="info">Authenticating&hellip;</p>
+    <p id="info">No session found</p>
     <button id="login" type="button">Login</button>
-    <button id="logout" type="button">Logout</button>
-    <button id="updateToken" type="button">Update token</button>
+    <button id="logout" type="button" disabled>Logout</button>
+    <button id="relogin" type="button" disabled>Session timed out > Relogin</button>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
