@@ -38,8 +38,7 @@ keycloak.onTokenExpired = handleEvent('TokenExpired')
 
 try {
   await keycloak.init({
-    onLoad: 'check-sso',
-    silentCheckSsoRedirectUri: window.location.origin + '/silent-check-sso.html',
+    flow: 'hybrid',
     enableLogging: true
   })
 } catch (error) {
