@@ -16,7 +16,7 @@
     "@octokit/rest": "^20.0.1",
     "gunzip-maybe": "^1.4.2",
     "http-proxy": "^1.18.1",
-    "mkcert": "^1.5.1",
+    "mkcert": "^3.0.0",
     "tar-fs": "^3.0.4",
     "typescript": "^5.1.6",
     "vite": "^4.4.9"
