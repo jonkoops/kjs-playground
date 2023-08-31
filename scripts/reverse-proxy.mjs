@@ -15,14 +15,16 @@ const authority = await mkcert.createCA({
   countryCode: 'NL',
   state: 'Noord-Holland',
   locality: 'Amsterdam',
-  validityDays: 365
+  validity: 365
 });
 
 const certificate = await mkcert.createCert({
   domains: ['127.0.0.1', 'localhost', '*.local'],
-  validityDays: 365,
-  caKey: authority.key,
-  caCert: authority.cert
+  validity: 365,
+  ca: {
+    key: authority.key,
+    cert: authority.cert
+  }
 });
 
 const proxyServer = httpProxy.createProxyServer({
