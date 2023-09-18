@@ -4,10 +4,10 @@ This repo is intended as a playground that allow testing Keycloak JS for local d
 
 ## Setup
 
-The project uses multiple `.local` domains to allow testing 3rd party cookies properly. Add the following to `/etc/hosts` to ensure these domains can be reached:
+The project uses multiple `.localhost` domains to allow testing 3rd party cookies properly. Add the following to `/etc/hosts` to ensure these domains can be reached:
 
 ```
-127.0.0.1 keycloak-server.local kjs-playground.local
+127.0.0.1 keycloak-server.localhost kjs-playground.localhost
 ```
 
 ### Firefox
@@ -47,8 +47,8 @@ This command will start a server that proxies the requests from our domains to t
 
 Now that everything is up and running we can visit our Keycloak server and application on the following URLs:
 
-- Keycloak Server - https://keycloak-server.local:8080
-- Keycloak JS Playground - https://kjs-playground.local:8080
+- Keycloak Server - https://keycloak-server.localhost:8080
+- Keycloak JS Playground - https://kjs-playground.localhost:8080
 
 Since we are using self-signed certificates it might be the case that the browser warns you about a security issue. This can be circumvented by clicking "Advanced" and then "Accept the Risk and Continue" (or a similar equivalent in your browser).
 

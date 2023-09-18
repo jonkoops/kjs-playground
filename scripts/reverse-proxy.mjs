@@ -6,8 +6,8 @@ import mkcert from 'mkcert';
 
 const PORT = 8080
 const PROXIES = new Map([
-  ['keycloak-server.local:8080', 'http://127.0.0.1:8180'],
-  ['kjs-playground.local:8080', 'http://localhost:5173'],
+  ['keycloak-server.localhost:8080', 'http://127.0.0.1:8180'],
+  ['kjs-playground.localhost:8080', 'http://localhost:5173'],
 ])
 
 const authority = await mkcert.createCA({
@@ -19,7 +19,10 @@ const authority = await mkcert.createCA({
 });
 
 const certificate = await mkcert.createCert({
-  domains: ['127.0.0.1', 'localhost', '*.local'],
+  domains: [
+    'keycloak-server.localhost',
+    'kjs-playground.localhost'
+  ],
   validity: 365,
   ca: {
     key: authority.key,
