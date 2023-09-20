@@ -1,13 +1,25 @@
 # Keycloak JS Playground
 
-This repo is intended as a playground that allow testing Keycloak JS for local development.
+This repo is intended as a playground that allow testing Keycloak JS for local development. Specifically it is set up to allow debugging issues related to running on a different domain (such as 3rd-party cookies).
 
 ## Setup
 
-The project uses multiple `.localhost` domains to allow testing 3rd party cookies properly. Add the following to `/etc/hosts` to ensure these domains can be reached:
+The project uses multiple `.localhost` domains to allow proper testing across domains. Add the following to `/etc/hosts` to ensure these domains can be reached:
 
 ```
 127.0.0.1 keycloak-server.localhost kjs-playground.localhost
+```
+
+This project uses PNPM its package manager, to install the correct version of PNPM automatically you must first enable [Corepack](https://nodejs.org/api/corepack.html):
+
+```sh
+corepack enable
+```
+
+Then to install all the dependencies run:
+
+```sh
+pnpm install
 ```
 
 ### Firefox
@@ -22,25 +34,25 @@ If you are using Firefox you'll have to set the following flags in `about:config
 To start developing you'll have to run several commands in separate terminal sessions. In the following order:
 
 ```sh
-npm run server:start
+pnpm run server:start
 ```
 
 This will download and start the latest [nightly version](https://github.com/keycloak/keycloak/releases/tag/nightly) of Keycloak. Once the server is up and running, run the following command:
 
 ```sh
-npm run server:import-client
+pnpm run server:import-client
 ```
 
 This will import the client that is used for this project, allowing us to authenticate against the Keycloak server. Once the client is imported we can run the following:
 
 ```sh
-npm run dev
+pnpm run dev
 ```
 
 This starts our local [Vite](https://vitejs.dev/) development server, which allows us to serve our application and re-compile it in the background when changes are made.
 
 ```sh
-npm run server:proxy
+pnpm run server:proxy
 ```
 
 This command will start a server that proxies the requests from our domains to the local development and Keycloak server. It also generates self-signed certificates so we can test a secure HTTPS connection.
