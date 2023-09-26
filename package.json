@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@keycloak/keycloak-admin-client": "^22.0.3",
-    "@octokit/rest": "^20.0.1",
+    "@octokit/rest": "^20.0.2",
     "gunzip-maybe": "^1.4.2",
     "http-proxy": "^1.18.1",
     "mkcert": "^3.0.0",
