@@ -23,8 +23,8 @@ devDependencies:
     specifier: ^1.18.1
     version: 1.18.1
   mkcert:
-    specifier: ^3.1.0
-    version: 3.1.0
+    specifier: ^3.2.0
+    version: 3.2.0
   tar-fs:
     specifier: ^3.0.4
     version: 3.0.4
@@ -531,8 +531,8 @@ packages:
     resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
     dev: true
 
-  /mkcert@3.1.0:
-    resolution: {integrity: sha512-X30NUfGmOhdwaLTMOfsLAGrIzZa7EqER+q2pgD+KEKP2Yfyteg0LMJFT4UxUqhegty5gIogpEyejJ9o1S8lkOQ==}
+  /mkcert@3.2.0:
+    resolution: {integrity: sha512-026Eivq9RoOjOuLJGzbhGwXUAjBxRX11Z7Jbm4/7lqT/Av+XNy9SPrJte6+UpEt7i+W3e/HZYxQqlQcqXZWSzg==}
     engines: {node: '>=16'}
     hasBin: true
     dependencies:
