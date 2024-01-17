@@ -26,7 +26,7 @@ async function startServer() {
     [
       "start-dev",
       "--http-port=8180",
-      "--features=admin-fine-grained-authz,declarative-user-profile",
+      "--features=admin-fine-grained-authz",
       "--proxy=edge",
       ...args,
     ],
