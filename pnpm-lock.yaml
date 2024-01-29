@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   keycloak-js:
-    specifier: ^23.0.4
-    version: 23.0.4
+    specifier: ^23.0.5
+    version: 23.0.5
 
 devDependencies:
   '@keycloak/keycloak-admin-client':
@@ -621,8 +621,8 @@ packages:
     engines: {node: '>=18'}
     dev: false
 
-  /keycloak-js@23.0.4:
-    resolution: {integrity: sha512-Dq0X/8Gap9As3eAaeNRlQldxdBjMeKh2Q81QwykwihLAcG9hSZHuwFioldDmNbdzymguNMZpqfr3mK9hv+G8hA==}
+  /keycloak-js@23.0.5:
+    resolution: {integrity: sha512-etSFCG/sh1rBV8RJRgKsuVBJwtzeZaO5eI8B3ZIhxGwQLo9bObZHYDgthvMik35sYIbepV1LU9N0pZ+3sxai3w==}
     dependencies:
       base64-js: 1.5.1
       js-sha256: 0.10.1
