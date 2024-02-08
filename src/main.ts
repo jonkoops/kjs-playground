@@ -3,7 +3,7 @@ import Keycloak from "keycloak-js"
 const keycloak = new Keycloak({
   url: 'https://keycloak-server.localhost:8080',
   realm: 'master',
-  clientId: 'kjs-playground'
+  clientId: 'kjs-playground',
 })
 
 const loginButton = document.getElementById('login')!
@@ -40,7 +40,8 @@ try {
   await keycloak.init({
     onLoad: 'check-sso',
     silentCheckSsoRedirectUri: window.location.origin + '/silent-check-sso.html',
-    enableLogging: true
+    enableLogging: true,
+    pkceMethod: 'S256',
   })
 } catch (error) {
   console.error('Unable to initialize Keycloak:', error)
