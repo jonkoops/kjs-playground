@@ -18,7 +18,7 @@
     "gunzip-maybe": "^1.4.2",
     "http-proxy": "^1.18.1",
     "mkcert": "^3.2.0",
-    "tar-fs": "^3.0.4",
+    "tar-fs": "^3.0.5",
     "typescript": "^5.3.3",
     "vite": "^5.1.1"
   },
