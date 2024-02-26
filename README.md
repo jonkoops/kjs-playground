@@ -29,6 +29,10 @@ If you are using Firefox you'll have to set the following flags in `about:config
 - Set `security.enterprise_roots.enabled` to `true`. (allows self-signed HTTPS certificates from the system.)
 - Set `privacy.antitracking.enableWebcompat` to `false`. (disables web compatibility features, to ensure to ensure full compatibility with the [State Partitioning](https://developer.mozilla.org/en-US/docs/Web/Privacy/State_Partitioning) mechanism.)
 
+### Chrome
+
+When testing in Chrome it is recommended that you enable the [third-party cookies phaseout](https://developers.google.com/privacy-sandbox/blog/cookie-countdown-2023oct#test) to get the most accurate results. 
+
 ## Development
 
 To start developing you'll have to run several commands in separate terminal sessions. In the following order:
