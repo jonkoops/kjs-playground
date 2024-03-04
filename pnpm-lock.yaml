@@ -11,8 +11,8 @@ dependencies:
 
 devDependencies:
   '@keycloak/keycloak-admin-client':
-    specifier: ^23.0.7
-    version: 23.0.7
+    specifier: ^24.0.0
+    version: 24.0.0
   '@octokit/rest':
     specifier: ^20.0.2
     version: 20.0.2
@@ -235,14 +235,13 @@ packages:
     dev: true
     optional: true
 
-  /@keycloak/keycloak-admin-client@23.0.7:
-    resolution: {integrity: sha512-IBLRbGJBm3/ineA103aVV8ojEsMNcTz1hAppN1vB9nRc3xkFnC2yY7lQ/Gc0YS4KOL5WNam1FkoDezonurvKyw==}
+  /@keycloak/keycloak-admin-client@24.0.0:
+    resolution: {integrity: sha512-66qxaEW8KKtipIvvhpIW1jClb0KS/tjbE5TIsLtJ3mA0Xw0ms94setzMiXPXqLKfTDNDQWiao4ynTkpTmyfKjw==}
     engines: {node: '>=18'}
     dependencies:
       camelize-ts: 3.0.0
-      lodash-es: 4.17.21
       url-join: 5.0.0
-      url-template: 3.1.0
+      url-template: 3.1.1
     dev: true
 
   /@octokit/auth-token@4.0.0:
@@ -655,10 +654,6 @@ packages:
       jwt-decode: 4.0.0
     dev: false
 
-  /lodash-es@4.17.21:
-    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
-    dev: true
-
   /mkcert@3.2.0:
     resolution: {integrity: sha512-026Eivq9RoOjOuLJGzbhGwXUAjBxRX11Z7Jbm4/7lqT/Av+XNy9SPrJte6+UpEt7i+W3e/HZYxQqlQcqXZWSzg==}
     engines: {node: '>=16'}
@@ -843,8 +838,8 @@ packages:
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dev: true
 
-  /url-template@3.1.0:
-    resolution: {integrity: sha512-vB/eHWttzhN+NZzk9FcQB2h1cSEgb7zDYyvyxPhw02LYw7YqIzO+w1AqkcKvZ51gPH8o4+nyiWve/xuQqMdJZw==}
+  /url-template@3.1.1:
+    resolution: {integrity: sha512-4oszoaEKE/mQOtAmdMWqIRHmkxWkUZMnXFnjQ5i01CuRSK3uluxcH1MRVVVWmhlnzT1SCDfKxxficm2G37qzCA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dev: true
 
