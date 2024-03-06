@@ -19,7 +19,7 @@
     "http-proxy": "^1.18.1",
     "mkcert": "^3.2.0",
     "tar-fs": "^3.0.5",
-    "typescript": "^5.3.3",
+    "typescript": "^5.4.2",
     "vite": "^5.1.5"
   },
   "dependencies": {
