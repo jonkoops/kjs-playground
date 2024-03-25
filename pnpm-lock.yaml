@@ -11,8 +11,8 @@ dependencies:
 
 devDependencies:
   '@keycloak/keycloak-admin-client':
-    specifier: ^24.0.1
-    version: 24.0.1
+    specifier: ^24.0.2
+    version: 24.0.2
   '@octokit/rest':
     specifier: ^20.0.2
     version: 20.0.2
@@ -244,8 +244,8 @@ packages:
     dev: true
     optional: true
 
-  /@keycloak/keycloak-admin-client@24.0.1:
-    resolution: {integrity: sha512-kLUiYZyneJtSfWWMAs2vPwEodOBRkYDv9RNg0YoQWnPGqSFFM2ObYS/uW2Xp4ScX+gPz1NII7+j+3ELKAg+o7w==}
+  /@keycloak/keycloak-admin-client@24.0.2:
+    resolution: {integrity: sha512-6QliBSQ/KH/XkrLMXxv5fJ7/72dcYkb9hIko4w7g+UxqevqNINg3I91/ZdlwLEFHIUcNJVWIHZoJ6aY+5TurGg==}
     engines: {node: '>=18'}
     dependencies:
       camelize-ts: 3.0.0
