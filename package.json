@@ -23,6 +23,6 @@
     "vite": "^5.2.12"
   },
   "dependencies": {
-    "keycloak-js": "^24.0.4"
+    "keycloak-js": "^24.0.5"
   }
 }
