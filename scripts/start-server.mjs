@@ -28,6 +28,8 @@ async function startServer() {
       "--http-port=8180",
       "--features=admin-fine-grained-authz",
       "--proxy=edge",
+      "--hostname=https://keycloak-server.localhost:8080",
+      "--hostname-admin=https://keycloak-admin.localhost:8080",
       ...args,
     ],
     {
