@@ -20,7 +20,7 @@
     "mkcert": "^3.2.0",
     "tar-fs": "^3.0.6",
     "typescript": "^5.5.4",
-    "vite": "^5.3.4"
+    "vite": "^5.3.5"
   },
   "dependencies": {
     "keycloak-js": "^25.0.2"
