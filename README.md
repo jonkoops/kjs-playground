@@ -70,3 +70,13 @@ Now that everything is up and running we can visit our Keycloak server and appli
 Since we are using self-signed certificates it might be the case that the browser warns you about a security issue. This can be circumvented by clicking "Advanced" and then "Accept the Risk and Continue" (or a similar equivalent in your browser).
 
 If the Keycloak JS Playground doesn't load correctly try visiting the Keycloak server first and trust the self-signed certificate for that application first.
+
+## Running your own Keycloak instance
+
+If you would like to test against your own Keycloak instance for development purposes, such as fixing a bug, you can also choose to start your Keycloak server manually. To do so, run your Keycloak server with the following arguments:
+
+```sh
+start-dev --http-port=8180 --features=admin-fine-grained-authz --proxy-headers=forwarded --hostname=https://keycloak-server.localhost:8080 --hostname-admin=https://keycloak-admin.localhost:8080
+```
+
+Then when the server is running import the client confugration needed from `scripts/kjs-playground.json`.
