@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       keycloak-js:
-        specifier: ^25.0.5
-        version: 25.0.5
+        specifier: ^25.0.6
+        version: 25.0.6
     devDependencies:
       '@keycloak/keycloak-admin-client':
         specifier: ^25.0.5
@@ -410,8 +410,8 @@ packages:
     resolution: {integrity: sha512-+KJGIyHgkGuIq3IEBNftfhW/LfWhXUIY6OmyVWjliu5KH1y0fw7VQ8YndE2O4qZdMSd9SqbnC8GOcZEy0Om7sA==}
     engines: {node: '>=18'}
 
-  keycloak-js@25.0.5:
-    resolution: {integrity: sha512-/lrUWHpDoqt4XrY07Wtfo4S2/KPJ3pvE4y1xtus65pAlgqtiEONtlYOdAdJv6iAWl7RE4Jx7eaN5P1A5yO/NLg==}
+  keycloak-js@25.0.6:
+    resolution: {integrity: sha512-Km+dc+XfNvY6a4az5jcxTK0zPk52ns9mAxLrHj7lF3V+riVYvQujfHmhayltJDjEpSOJ4C8a57LFNNKnNnRP2g==}
 
   mkcert@3.2.0:
     resolution: {integrity: sha512-026Eivq9RoOjOuLJGzbhGwXUAjBxRX11Z7Jbm4/7lqT/Av+XNy9SPrJte6+UpEt7i+W3e/HZYxQqlQcqXZWSzg==}
@@ -849,7 +849,7 @@ snapshots:
 
   jwt-decode@4.0.0: {}
 
-  keycloak-js@25.0.5:
+  keycloak-js@25.0.6:
     dependencies:
       js-sha256: 0.11.0
       jwt-decode: 4.0.0
