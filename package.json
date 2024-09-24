@@ -8,16 +8,15 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "server:start": "./scripts/start-server.mjs",
-    "server:import-client": "./scripts/import-client.mjs",
-    "server:proxy": "./scripts/reverse-proxy.mjs"
+    "server": "./scripts/start-server.mjs",
+    "import-client": "./scripts/import-client.mjs",
+    "proxy": "./scripts/reverse-proxy.mjs"
   },
   "devDependencies": {
     "@keycloak/keycloak-admin-client": "^25.0.6",
     "@octokit/rest": "^21.0.2",
     "gunzip-maybe": "^1.4.2",
     "http-proxy": "^1.18.1",
-    "mkcert": "^3.2.0",
     "tar-fs": "^3.0.6",
     "typescript": "^5.6.2",
     "vite": "^5.4.7"
