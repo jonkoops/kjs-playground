@@ -15,6 +15,20 @@ const proxyServer = httpProxy.createProxyServer({
 })
 
 const server = createServer((req, res) => {
+  proxyServer.web(req, res, { target: getProxyTarget(req) })
+})
+
+server.on('upgrade', (req, socket, head) => {
+  proxyServer.ws(req, socket, head, { target: getProxyTarget(req) })
+});
+
+server.listen(PORT)
+console.log(`listening on port ${PORT}`)
+
+/**
+ * @param {import('node:http').IncomingMessage} req 
+ */
+function getProxyTarget(req) {
   const host = req.headers.host
   const target = host ? PROXIES.get(host) : undefined
 
@@ -22,8 +36,5 @@ const server = createServer((req, res) => {
     throw new Error(`Unable to proxy to ${host}, no target found.`)
   }
 
-  proxyServer.web(req, res, { target })
-})
-
-server.listen(PORT)
-console.log(`listening on port ${PORT}`)
+  return target;
+}
