@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       keycloak-js:
-        specifier: ^26.0.2
-        version: 26.0.2
+        specifier: ^26.0.4
+        version: 26.0.4
     devDependencies:
       '@keycloak/keycloak-admin-client':
         specifier: ^26.0.2
@@ -408,8 +408,8 @@ packages:
   isarray@1.0.0:
     resolution: {integrity: sha512-VLghIWNM6ELQzo7zwmcg0NmTVyWKYjvIeM83yjp0wRDTmUnrM678fQbcKBo6n2CJEF0szoG//ytg+TKla89ALQ==}
 
-  keycloak-js@26.0.2:
-    resolution: {integrity: sha512-c77fNwTBDaNtlewrG/CREwZYGNe/QvL72o3/8/EIsvjphPVrXobvAcQG6DxBy82Ah9e3ASUPxAyyA+jPVEgOsg==}
+  keycloak-js@26.0.4:
+    resolution: {integrity: sha512-MBZCLYihYawrUDPjYvryfxWXJgquA5Kr3muWyIigWkNdIP8SBupiuuyKpZlzOMYqdk1eegG1OX0R3qqt1KUKdg==}
 
   nanoid@3.3.7:
     resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
@@ -843,7 +843,7 @@ snapshots:
 
   isarray@1.0.0: {}
 
-  keycloak-js@26.0.2: {}
+  keycloak-js@26.0.4: {}
 
   nanoid@3.3.7: {}
 
