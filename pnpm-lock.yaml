@@ -13,8 +13,8 @@ importers:
         version: 26.0.5
     devDependencies:
       '@keycloak/keycloak-admin-client':
-        specifier: ^26.0.4
-        version: 26.0.4
+        specifier: ^26.0.5
+        version: 26.0.5
       '@octokit/rest':
         specifier: ^21.0.2
         version: 21.0.2
@@ -180,8 +180,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@keycloak/keycloak-admin-client@26.0.4':
-    resolution: {integrity: sha512-0uir6L91DMDr0NWRZmfWKf2uIY3E5m4eAWaGQbNkkCuaglw1MKS8pbD4+6D11SbeWvgjTI0Qh90ErFPca+Cj5g==}
+  '@keycloak/keycloak-admin-client@26.0.5':
+    resolution: {integrity: sha512-5AxA5e/RL7fzQ7j84t2T18ghv0Ge12q2RtwLlO0GwPv9IikBqx4s8e3Klo6shjGtVd7nvhj2GDjoyXtSnXYp9A==}
     engines: {node: '>=18'}
 
   '@octokit/auth-token@5.1.1':
@@ -614,7 +614,7 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
-  '@keycloak/keycloak-admin-client@26.0.4':
+  '@keycloak/keycloak-admin-client@26.0.5':
     dependencies:
       camelize-ts: 3.0.0
       url-join: 5.0.0
