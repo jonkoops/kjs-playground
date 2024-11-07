@@ -24,6 +24,14 @@ If you are using Firefox you'll want to set `privacy.antitracking.enableWebcompa
 
 When testing in Chrome it is recommended that you enable the [third-party cookies phaseout](https://developers.google.com/privacy-sandbox/blog/cookie-countdown-2023oct#test) to get the most accurate results. 
 
+### Safari
+
+Unlike other browsers Safari does not automatically loop `.localhost` domains back to the local host, so you'll have to add these addresses to `/etc/hosts`:
+
+```
+127.0.0.1 auth.keycloak.localhost admin.keycloak.localhost playground.keycloak.localhost
+```
+
 ## Development
 
 To start developing you'll have to run several commands in separate terminal sessions. In the following order:
