@@ -54,16 +54,16 @@ This command will start a server that proxies the requests from our domains to t
 
 Now that everything is up and running we can visit our Keycloak server and application on the following URLs:
 
-- Keycloak Server - http://keycloak-server.localhost:8080
-- Keycloak Admin Console - http://keycloak-admin.localhost:8080
-- Keycloak JS Playground - http://kjs-playground.localhost:8080
+- Keycloak Server - http://auth.keycloak.localhost:8080
+- Keycloak Admin Console - http://admin.keycloak.localhost:8080
+- Keycloak JS Playground - http://playground.keycloak.localhost:8080
 
 ## Running your own Keycloak instance
 
 If you would like to test against your own Keycloak instance for development purposes, such as fixing a bug, you can also choose to start your Keycloak server manually. To do so, run your Keycloak server with the following arguments:
 
 ```sh
-start-dev --http-port=8180 --features=admin-fine-grained-authz --proxy-headers=forwarded --hostname=http://keycloak-server.localhost:8080 --hostname-admin=http://keycloak-admin.localhost:8080
+start-dev --http-port=8180 --features=admin-fine-grained-authz --proxy-headers=forwarded --hostname=http://auth.keycloak.localhost:8080 --hostname-admin=http://admin.keycloak.localhost:8080
 ```
 
 Then when the server is running import the client confugration needed from `scripts/kjs-playground.json`.

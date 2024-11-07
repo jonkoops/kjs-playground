@@ -1,7 +1,7 @@
 import Keycloak from "keycloak-js"
 
 const keycloak = new Keycloak({
-  url: 'http://keycloak-server.localhost:8080',
+  url: 'http://auth.keycloak.localhost:8080',
   realm: 'master',
   clientId: 'kjs-playground',
 })
