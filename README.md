@@ -29,7 +29,7 @@ When testing in Chrome it is recommended that you enable the [third-party cookie
 Unlike other browsers Safari does not automatically loop `.localhost` domains back to the local host, so you'll have to add these addresses to `/etc/hosts`:
 
 ```
-127.0.0.1 auth.keycloak.localhost admin.keycloak.localhost playground.keycloak.localhost
+127.0.0.1 auth.keycloak.localhost admin.keycloak.localhost playground.localhost
 ```
 
 ## Development
@@ -64,7 +64,7 @@ Now that everything is up and running we can visit our Keycloak server and appli
 
 - Keycloak Server - http://auth.keycloak.localhost:8080
 - Keycloak Admin Console - http://admin.keycloak.localhost:8080
-- Keycloak JS Playground - http://playground.keycloak.localhost:8080
+- Keycloak JS Playground - http://playground.localhost:8080
 
 ## Running your own Keycloak instance
 

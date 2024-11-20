@@ -7,7 +7,7 @@ const PORT = 8080
 const PROXIES = new Map([
   ['auth.keycloak.localhost:8080', 'http://127.0.0.1:8180'],
   ['admin.keycloak.localhost:8080', 'http://127.0.0.1:8180'],
-  ['playground.keycloak.localhost:8080', 'http://localhost:5173'],
+  ['playground.localhost:8080', 'http://localhost:5173'],
 ])
 
 const proxyServer = httpProxy.createProxyServer({

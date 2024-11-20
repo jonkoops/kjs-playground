@@ -10,7 +10,7 @@
   "alwaysDisplayInConsole": false,
   "clientAuthenticatorType": "client-secret",
   "redirectUris": [
-    "http://playground.keycloak.localhost:8080/*"
+    "http://playground.localhost:8080/*"
   ],
   "webOrigins": [
     "+"
