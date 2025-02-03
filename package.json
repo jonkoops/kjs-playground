@@ -25,5 +25,10 @@
   },
   "dependencies": {
     "keycloak-js": "^26.1.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }
