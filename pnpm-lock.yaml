@@ -19,8 +19,8 @@ importers:
         specifier: ^21.1.0
         version: 21.1.0
       '@types/http-proxy':
-        specifier: ^1.17.15
-        version: 1.17.15
+        specifier: ^1.17.16
+        version: 1.17.16
       '@types/node':
         specifier: ^22.13.1
         version: 22.13.1
@@ -346,8 +346,8 @@ packages:
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
 
-  '@types/http-proxy@1.17.15':
-    resolution: {integrity: sha512-25g5atgiVNTIv0LBDTg1H74Hvayx0ajtJPLLcYE3whFv75J0pWNtOBzaXJQgDTmrX1bx5U9YC2w/n65BN1HwRQ==}
+  '@types/http-proxy@1.17.16':
+    resolution: {integrity: sha512-sdWoUajOB1cd0A8cRRQ1cfyWNbmFKLAqBB89Y8x5iYyG/mkJHc0YUH8pdWBy2omi9qtCpiIgGjuwO0dQST2l5w==}
 
   '@types/node@22.13.1':
     resolution: {integrity: sha512-jK8uzQlrvXqEU91UxiK5J7pKHyzgnI1Qnl0QDHIgVGuolJhRb9EEl28Cj9b3rGR8B2lhFCtvIm5os8lFnO/1Ew==}
@@ -799,7 +799,7 @@ snapshots:
 
   '@types/estree@1.0.6': {}
 
-  '@types/http-proxy@1.17.15':
+  '@types/http-proxy@1.17.16':
     dependencies:
       '@types/node': 22.13.1
 
