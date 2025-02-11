@@ -24,7 +24,7 @@
     "vite": "^6.1.0"
   },
   "dependencies": {
-    "keycloak-js": "^26.1.1"
+    "keycloak-js": "^26.1.2"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
