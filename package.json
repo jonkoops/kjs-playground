@@ -21,7 +21,7 @@
     "http-proxy": "^1.18.1",
     "tar-fs": "^3.0.8",
     "typescript": "^5.7.3",
-    "vite": "^6.1.1"
+    "vite": "^6.2.0"
   },
   "dependencies": {
     "keycloak-js": "^26.2.0"
