@@ -20,7 +20,7 @@
     "gunzip-maybe": "^1.4.2",
     "http-proxy": "^1.18.1",
     "tar-fs": "^3.0.8",
-    "typescript": "^5.8.2",
+    "typescript": "^5.8.3",
     "vite": "^6.2.5"
   },
   "dependencies": {
