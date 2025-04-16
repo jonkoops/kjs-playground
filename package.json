@@ -16,7 +16,7 @@
     "@keycloak/keycloak-admin-client": "^26.2.0",
     "@octokit/rest": "^21.1.1",
     "@types/http-proxy": "^1.17.16",
-    "@types/node": "^22.14.0",
+    "@types/node": "^22.14.1",
     "gunzip-maybe": "^1.4.2",
     "http-proxy": "^1.18.1",
     "tar-fs": "^3.0.8",
