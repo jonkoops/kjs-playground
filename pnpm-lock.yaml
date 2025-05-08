@@ -22,7 +22,7 @@ importers:
         specifier: ^1.17.16
         version: 1.17.16
       '@types/node':
-        specifier: ^22.15.3
+        specifier: ^22.15.16
         version: 22.15.16
       gunzip-maybe:
         specifier: ^1.4.2
