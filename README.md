@@ -16,6 +16,8 @@ Then to install all the dependencies run:
 pnpm install
 ```
 
+You will also need to download and install [Podman](https://podman.io/) to run the Keycloak server. Alternatively, you can run the Keycloak server by downloading the latest version from [the website](https://www.keycloak.org/downloads).
+
 ### Firefox
 
 If you are using Firefox you'll want to set `privacy.antitracking.enableWebcompat` to `false` in `about:config`. This disables web compatibility features, to ensure to ensure full compatibility with the [State Partitioning](https://developer.mozilla.org/en-US/docs/Web/Privacy/State_Partitioning) mechanism.
@@ -34,10 +36,10 @@ Unlike other browsers Safari does not automatically loop `.localhost` domains ba
 
 ## Development
 
-To start developing you'll have to run several commands in separate terminal sessions. In the following order:
+To start developing you'll have to run several commands in separate terminal sessions. First, start the Keycloak server.
 
 ```sh
-pnpm run server
+podman run -p 8180:8080 -e KC_BOOTSTRAP_ADMIN_USERNAME=admin -e KC_BOOTSTRAP_ADMIN_PASSWORD=admin --pull=newer quay.io/keycloak/keycloak:latest start-dev --proxy-headers=forwarded --hostname=http://auth.keycloak.localhost:8080 --hostname-admin=http://admin.keycloak.localhost:8080
 ```
 
 This will download and start the latest [nightly version](https://github.com/keycloak/keycloak/releases/tag/nightly) of Keycloak. Once the server is up and running, run the following command:

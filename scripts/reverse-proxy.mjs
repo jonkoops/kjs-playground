@@ -15,7 +15,10 @@ const proxyServer = httpProxy.createProxyServer({
 })
 
 const server = createServer((req, res) => {
-  proxyServer.web(req, res, { target: getProxyTarget(req) })
+  proxyServer.web(req, res, { target: getProxyTarget(req) }, (err) => {
+    res.writeHead(502, { 'Content-Type': 'text/plain' });
+    res.end(`Error proxying request: ${err.message}`);
+  });
 })
 
 server.on('upgrade', (req, socket, head) => {

@@ -8,27 +8,18 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "server": "./scripts/start-server.mjs",
     "import-client": "./scripts/import-client.mjs",
     "proxy": "./scripts/reverse-proxy.mjs"
   },
   "devDependencies": {
     "@keycloak/keycloak-admin-client": "^26.2.5",
-    "@octokit/rest": "^22.0.0",
     "@types/http-proxy": "^1.17.16",
-    "@types/node": "^22.16.0",
-    "gunzip-maybe": "^1.4.2",
+    "@types/node": "^24.0.10",
     "http-proxy": "^1.18.1",
-    "tar-fs": "^3.1.0",
     "typescript": "^5.8.3",
     "vite": "^7.0.0"
   },
   "dependencies": {
     "keycloak-js": "^26.2.0"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild"
-    ]
   }
 }
