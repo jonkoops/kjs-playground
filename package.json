@@ -14,7 +14,7 @@
   "devDependencies": {
     "@keycloak/keycloak-admin-client": "^26.3.4",
     "@types/http-proxy": "^1.17.16",
-    "@types/node": "^24.5.0",
+    "@types/node": "^24.5.1",
     "http-proxy": "^1.18.1",
     "typescript": "^5.9.2",
     "vite": "^7.1.5"
