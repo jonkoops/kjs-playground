@@ -17,7 +17,7 @@
     "@types/node": "^24.5.1",
     "http-proxy": "^1.18.1",
     "typescript": "^5.9.2",
-    "vite": "^7.1.5"
+    "vite": "^7.1.6"
   },
   "dependencies": {
     "keycloak-js": "^26.2.0"
