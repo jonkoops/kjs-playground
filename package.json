@@ -12,7 +12,7 @@
     "proxy": "./scripts/reverse-proxy.mjs"
   },
   "devDependencies": {
-    "@keycloak/keycloak-admin-client": "^26.3.4",
+    "@keycloak/keycloak-admin-client": "^26.3.5",
     "@types/http-proxy": "^1.17.16",
     "@types/node": "^24.5.2",
     "http-proxy": "^1.18.1",
