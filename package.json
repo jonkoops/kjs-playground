@@ -20,6 +20,6 @@
     "vite": "^7.1.9"
   },
   "dependencies": {
-    "keycloak-js": "^26.2.0"
+    "keycloak-js": "^26.2.1"
   }
 }
