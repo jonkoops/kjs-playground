@@ -13,8 +13,8 @@ importers:
         version: 26.2.1
     devDependencies:
       '@keycloak/keycloak-admin-client':
-        specifier: ^26.4.1
-        version: 26.4.1
+        specifier: ^26.4.2
+        version: 26.4.2
       '@types/http-proxy':
         specifier: ^1.17.16
         version: 1.17.16
@@ -183,8 +183,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@keycloak/keycloak-admin-client@26.4.1':
-    resolution: {integrity: sha512-xJkU4eNkVaHBolNMnR5lWWEX3nXBjGUJblGnRSOpzn4QKr3HDu67s590a7db4CCQYHzyTj21kuD/i6DqNTxXbQ==}
+  '@keycloak/keycloak-admin-client@26.4.2':
+    resolution: {integrity: sha512-BDZuV+s9XoYSElHmG/Ul6r/uHzbExRSC3jybBR9CHZ9JDad1PcVwpSVSBTqiJhF7P1OtMm1gnLLS1TMO/QY+8Q==}
     engines: {node: '>=18'}
 
   '@rollup/rollup-android-arm-eabi@4.44.1':
@@ -503,7 +503,7 @@ snapshots:
   '@esbuild/win32-x64@0.25.5':
     optional: true
 
-  '@keycloak/keycloak-admin-client@26.4.1':
+  '@keycloak/keycloak-admin-client@26.4.2':
     dependencies:
       camelize-ts: 3.0.0
       url-join: 5.0.0
