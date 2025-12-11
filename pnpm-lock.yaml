@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       keycloak-js:
-        specifier: ^26.2.1
-        version: 26.2.1
+        specifier: ^26.2.2
+        version: 26.2.2
     devDependencies:
       '@keycloak/keycloak-admin-client':
         specifier: ^26.4.7
@@ -335,8 +335,8 @@ packages:
     resolution: {integrity: sha512-7mz/721AbnJwIVbnaSv1Cz3Am0ZLT/UBwkC92VlxhXv/k/BBQfM2fXElQNC27BVGr0uwUpplYPQM9LnaBMR5NQ==}
     engines: {node: '>=8.0.0'}
 
-  keycloak-js@26.2.1:
-    resolution: {integrity: sha512-bZt6fQj/TLBAmivXSxSlqAJxBx/knNZDQGJIW4ensGYGN4N6tUKV8Zj3Y7/LOV8eIpvWsvqV70fbACihK8Ze0Q==}
+  keycloak-js@26.2.2:
+    resolution: {integrity: sha512-ug7pNZ1xNkd7PPkerOJCEU2VnUhS7CYStDOCFJgqCNQ64h53ppxaKrh4iXH0xM8hFu5b1W6e6lsyYWqBMvaQFg==}
 
   nanoid@3.3.11:
     resolution: {integrity: sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==}
@@ -623,7 +623,7 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  keycloak-js@26.2.1: {}
+  keycloak-js@26.2.2: {}
 
   nanoid@3.3.11: {}
 
