@@ -13,8 +13,8 @@ importers:
         version: 26.2.3
     devDependencies:
       '@keycloak/keycloak-admin-client':
-        specifier: ^26.5.7
-        version: 26.5.7
+        specifier: ^26.6.0
+        version: 26.6.0
       '@types/http-proxy':
         specifier: ^1.17.17
         version: 1.17.17
@@ -198,15 +198,37 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@keycloak/keycloak-admin-client@26.5.7':
-    resolution: {integrity: sha512-t1rd38gcRmSvcPAniEQgcFulfZw+/flbdBQlGQRvbGCWk0yeZLEre/TrdN40irKk2FaVZH2pTO46rlJwqKBTOw==}
+  '@keycloak/keycloak-admin-client@26.6.0':
+    resolution: {integrity: sha512-L3dQDkvVWT2fJWsDUa0qDlQAf0Q41qrsMILHD0Uoy8PsHvoD24hTxmyHhxSLlUPwsURmpChkKo2lMS7BDFJ9IA==}
     engines: {node: '>=18'}
+
+  '@microsoft/kiota-abstractions@1.0.0-preview.100':
+    resolution: {integrity: sha512-3s2WYKQ6WLB/0pyDmmv9bigH/3LZ0Mm4ldHskNLBj0U8DYjFzfG729snnEij+hZN0l2XHr37pGBr1MZK8vM7zQ==}
+
+  '@microsoft/kiota-http-fetchlibrary@1.0.0-preview.100':
+    resolution: {integrity: sha512-uS2rhKKjbYiT8JWG8GGVOALB+s4HdDc9hg5tTZMVf3qY5b/us1OKLQ6WgW6USq/kZAuKKWkIq/BQgPCWbHtFTQ==}
+
+  '@microsoft/kiota-serialization-form@1.0.0-preview.100':
+    resolution: {integrity: sha512-SR/yWBtvKYhN2ARR4wVMFb91XgN32DBmLLQmtemdKgL1YWBxVCNAUP/qHbZhrTX7q4kh7jl/S9yrr1S8ySS7AA==}
+
+  '@microsoft/kiota-serialization-json@1.0.0-preview.100':
+    resolution: {integrity: sha512-4qatf5j0Aeaakdw24jMuIX7W6mf/W2rU9UyAjkIrSjaB7W5n8gsUvhoTcRpPTAFN7pvzQkCbO7Z0paRfdYzhIw==}
+
+  '@microsoft/kiota-serialization-multipart@1.0.0-preview.100':
+    resolution: {integrity: sha512-zwWoLZH6+KsAl05Ijd8HpbU+mct5wb0//ZCGdCkQ/UqsAaoe2xYSoKicxQbVGv9VvSTq0as7iVLwqDeqEI9rDw==}
+
+  '@microsoft/kiota-serialization-text@1.0.0-preview.100':
+    resolution: {integrity: sha512-x2Epz0StHLBkVJKeEmwrXSh6SJuxZ72VVBNO53uHUNZ/Y7X8tZuSQR7X74EO69mEi4zAF21X2jbkF9/dhlARog==}
 
   '@napi-rs/wasm-runtime@1.1.2':
     resolution: {integrity: sha512-sNXv5oLJ7ob93xkZ1XnxisYhGYXfaG9f65/ZgYuAu3qt7b3NadcOEhLvx28hv31PgX8SZJRYrAIPQilQmFpLVw==}
     peerDependencies:
       '@emnapi/core': ^1.7.1
       '@emnapi/runtime': ^1.7.1
+
+  '@opentelemetry/api@1.9.1':
+    resolution: {integrity: sha512-gLyJlPHPZYdAk1JENA9LeHejZe1Ti77/pTeFm/nMXmQH/HFZlcS/O2XJB+L8fkbrNSqhdtlvjBVjxwUYanNH5Q==}
+    engines: {node: '>=8.0.0'}
 
   '@oxc-project/types@0.123.0':
     resolution: {integrity: sha512-YtECP/y8Mj1lSHiUWGSRzy/C6teUKlS87dEfuVKT09LgQbUsBW1rNg+MiJ4buGu3yuADV60gbIvo9/HplA56Ew==}
@@ -308,6 +330,9 @@ packages:
 
   '@rolldown/pluginutils@1.0.0-rc.13':
     resolution: {integrity: sha512-3ngTAv6F/Py35BsYbeeLeecvhMKdsKm4AoOETVhAA+Qc8nrA2I0kF7oa93mE9qnIurngOSpMnQ0x2nQY2FPviA==}
+
+  '@std-uritemplate/std-uritemplate@2.0.8':
+    resolution: {integrity: sha512-8oj7jKksoTRxjdPkWKX9FyOKDS8ORBm+ZfTSHm0f3eYha8cI0O1d57gyduOIAX7Y2uUukNDNlxlvGb+FFkE7yQ==}
 
   '@tybys/wasm-util@0.10.1':
     resolution: {integrity: sha512-9tTaPJLSiejZKx+Bmog4uSubteqTvFrVrURwkmHixBo0G4seD0zUxp98E1DzUBJxLQ3NPwXrGKDiVjwx/DpPsg==}
@@ -465,6 +490,9 @@ packages:
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
+
+  tinyduration@3.4.1:
+    resolution: {integrity: sha512-NemFoamVYn7TmtwZKZ3OiliM9fZkr6EWiTM+wKknco6POSy2gS689xx/pXip0JYp40HXpUw6k65CUYHWYUXdaA==}
 
   tinyglobby@0.2.15:
     resolution: {integrity: sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==}
@@ -624,10 +652,49 @@ snapshots:
   '@esbuild/win32-x64@0.27.1':
     optional: true
 
-  '@keycloak/keycloak-admin-client@26.5.7':
+  '@keycloak/keycloak-admin-client@26.6.0':
     dependencies:
+      '@microsoft/kiota-abstractions': 1.0.0-preview.100
+      '@microsoft/kiota-http-fetchlibrary': 1.0.0-preview.100
+      '@microsoft/kiota-serialization-form': 1.0.0-preview.100
+      '@microsoft/kiota-serialization-json': 1.0.0-preview.100
+      '@microsoft/kiota-serialization-multipart': 1.0.0-preview.100
+      '@microsoft/kiota-serialization-text': 1.0.0-preview.100
       camelize-ts: 3.0.0
       url-template: 3.1.1
+
+  '@microsoft/kiota-abstractions@1.0.0-preview.100':
+    dependencies:
+      '@opentelemetry/api': 1.9.1
+      '@std-uritemplate/std-uritemplate': 2.0.8
+      tinyduration: 3.4.1
+      tslib: 2.8.1
+
+  '@microsoft/kiota-http-fetchlibrary@1.0.0-preview.100':
+    dependencies:
+      '@microsoft/kiota-abstractions': 1.0.0-preview.100
+      '@opentelemetry/api': 1.9.1
+      tslib: 2.8.1
+
+  '@microsoft/kiota-serialization-form@1.0.0-preview.100':
+    dependencies:
+      '@microsoft/kiota-abstractions': 1.0.0-preview.100
+      tslib: 2.8.1
+
+  '@microsoft/kiota-serialization-json@1.0.0-preview.100':
+    dependencies:
+      '@microsoft/kiota-abstractions': 1.0.0-preview.100
+      tslib: 2.8.1
+
+  '@microsoft/kiota-serialization-multipart@1.0.0-preview.100':
+    dependencies:
+      '@microsoft/kiota-abstractions': 1.0.0-preview.100
+      tslib: 2.8.1
+
+  '@microsoft/kiota-serialization-text@1.0.0-preview.100':
+    dependencies:
+      '@microsoft/kiota-abstractions': 1.0.0-preview.100
+      tslib: 2.8.1
 
   '@napi-rs/wasm-runtime@1.1.2(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)':
     dependencies:
@@ -635,6 +702,8 @@ snapshots:
       '@emnapi/runtime': 1.9.1
       '@tybys/wasm-util': 0.10.1
     optional: true
+
+  '@opentelemetry/api@1.9.1': {}
 
   '@oxc-project/types@0.123.0': {}
 
@@ -688,6 +757,8 @@ snapshots:
     optional: true
 
   '@rolldown/pluginutils@1.0.0-rc.13': {}
+
+  '@std-uritemplate/std-uritemplate@2.0.8': {}
 
   '@tybys/wasm-util@0.10.1':
     dependencies:
@@ -843,13 +914,14 @@ snapshots:
 
   source-map-js@1.2.1: {}
 
+  tinyduration@3.4.1: {}
+
   tinyglobby@0.2.15:
     dependencies:
       fdir: 6.5.0(picomatch@4.0.4)
       picomatch: 4.0.4
 
-  tslib@2.8.1:
-    optional: true
+  tslib@2.8.1: {}
 
   typescript@6.0.2: {}
 
