@@ -13,8 +13,8 @@ importers:
         version: 26.2.3
     devDependencies:
       '@keycloak/keycloak-admin-client':
-        specifier: ^26.6.0
-        version: 26.6.0
+        specifier: ^26.6.1
+        version: 26.6.1
       '@types/http-proxy':
         specifier: ^1.17.17
         version: 1.17.17
@@ -198,8 +198,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@keycloak/keycloak-admin-client@26.6.0':
-    resolution: {integrity: sha512-L3dQDkvVWT2fJWsDUa0qDlQAf0Q41qrsMILHD0Uoy8PsHvoD24hTxmyHhxSLlUPwsURmpChkKo2lMS7BDFJ9IA==}
+  '@keycloak/keycloak-admin-client@26.6.1':
+    resolution: {integrity: sha512-IWzXCyUFhLkk2LkryCunEAGbRVB7ttC7WNmjXlFT83WlBrmxRCDKo52LzmIRgtWcy0VU1qe3Poj5BGyIkE1AnQ==}
     engines: {node: '>=18'}
 
   '@microsoft/kiota-abstractions@1.0.0-preview.100':
@@ -652,7 +652,7 @@ snapshots:
   '@esbuild/win32-x64@0.27.1':
     optional: true
 
-  '@keycloak/keycloak-admin-client@26.6.0':
+  '@keycloak/keycloak-admin-client@26.6.1':
     dependencies:
       '@microsoft/kiota-abstractions': 1.0.0-preview.100
       '@microsoft/kiota-http-fetchlibrary': 1.0.0-preview.100
