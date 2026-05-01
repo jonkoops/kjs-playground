@@ -4,16 +4,10 @@ This repo is intended as a playground that allow testing Keycloak JS for local d
 
 ## Setup
 
-Make sure you are running the latest version of Node.js, see Node.js' [download page](https://nodejs.org/en/download/package-manager) for options. To manage dependencies [PNPM](https://pnpm.io/) is used, this is the same package manager the Keycloak project uses and allows for [easy linking](https://pnpm.io/cli/link) during development. To install the correct version of PNPM you must first enable [Corepack](https://nodejs.org/api/corepack.html):
+Make sure you are running the latest version of Node.js, see Node.js' [download page](https://nodejs.org/en/download/package-manager) for options. Then install all the dependencies:
 
 ```sh
-corepack enable
-```
-
-Then to install all the dependencies run:
-
-```sh
-pnpm install
+npm install
 ```
 
 You will also need to download and install [Podman](https://podman.io/) to run the Keycloak server. Alternatively, you can run the Keycloak server by downloading the latest version from [the website](https://www.keycloak.org/downloads).
@@ -45,19 +39,19 @@ podman run -p 8180:8080 -e KC_BOOTSTRAP_ADMIN_USERNAME=admin -e KC_BOOTSTRAP_ADM
 This will download and start the latest [nightly version](https://github.com/keycloak/keycloak/releases/tag/nightly) of Keycloak. Once the server is up and running, run the following command:
 
 ```sh
-pnpm run import-client
+npm run import-client
 ```
 
 This will import the client that is used for this project, allowing us to authenticate against the Keycloak server. Once the client is imported we can run the following:
 
 ```sh
-pnpm run dev
+npm run dev
 ```
 
 This starts our local [Vite](https://vitejs.dev/) development server, which allows us to serve our application and re-compile it in the background when changes are made.
 
 ```sh
-pnpm run proxy
+npm run proxy
 ```
 
 This command will start a server that proxies the requests from our domains to the local development and Keycloak server.
